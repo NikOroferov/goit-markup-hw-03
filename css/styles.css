@@ -31,12 +31,25 @@ body {
   font-family: 'Raleway', 'Roboto', sans-serif;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .logo-first {
@@ -57,12 +70,25 @@ a {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-
   letter-spacing: 0.03em;
+  margin-right: 95px;
+  padding: 24px 0;
 }
 
 /* index.html */
+
+.container {
+  outline: 1px solid tomato;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* Header */
+
+.container.head {
+  display: flex;
+}
 
 .link {
   color: var(--secondary-color-text);
@@ -70,7 +96,21 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
+}
+
+.link-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link.now {
+  color: var(--accent-color);
+}
+
+.link-list {
+  display: flex;
+  margin-right: 330px;
+  padding: 32px 0;
 }
 
 .connection {
@@ -82,6 +122,10 @@ a {
   line-height: 1.2;
 }
 
+.connection-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .connection:hover,
 .link:hover,
 .connection:focus,
@@ -89,10 +133,19 @@ a {
   color: var(--accent-color);
 }
 
+.connection-list {
+  display: flex;
+  padding: 32px 0;
+}
+
 /* Hero */
 
 .hero {
   background: var(--secondary-bcg-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0;
+  text-align: center;
 }
 
 .hero-title {
@@ -103,22 +156,29 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
 }
 
 .hero-link {
-  background: var(--third-bcg-color);
-  color: var(--secondary-bcg-color);
+  background: var(--accent-color);
+  color: white;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.75;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px 32px;
 }
 
 .hero-link:hover,
 .hero-link:focus {
-  background: var(--accent-color);
-  color: white;
+  background: var(--third-bcg-color);
+  color: var(--secondary-bcg-color);
 }
 
 /* Adventages/Doing */
