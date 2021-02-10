@@ -1,0 +1,271 @@
+:root {
+  --primary-color-text: rgba(117, 117, 117, 1);
+  --secondary-color-text: rgba(33, 33, 33, 1);
+  --footer-color-text: rgba(255, 255, 255, 0.6);
+  --accent-color: rgba(33, 150, 243, 1);
+  --primary-bcg-color: rgba(255, 255, 255, 1);
+  --secondary-bcg-color: #2f303a;
+  --third-bcg-color: rgba(245, 244, 250, 1);
+  --primary-button-color: #f5f4fa;
+
+  --black: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--primary-color-text);
+  font-family: 'Raleway', 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-first {
+  color: var(--accent-color);
+}
+
+.logo-second {
+  color: var(--black);
+}
+
+.logo-third {
+  color: var(--white);
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+}
+
+/* index.html */
+/* Header */
+
+.link {
+  color: var(--secondary-color-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.connection {
+  color: var(--primary-color-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.connection:hover,
+.link:hover,
+.connection:focus,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background: var(--secondary-bcg-color);
+}
+
+.hero-title {
+  color: white;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+.hero-link {
+  background: var(--third-bcg-color);
+  color: var(--secondary-bcg-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  background: var(--accent-color);
+  color: white;
+}
+
+/* Adventages/Doing */
+
+.advantages-title,
+.doing-title,
+.link {
+  color: var(--secondary-color-text);
+}
+
+.advantages-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.doing-title,
+.team-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.doing-img {
+  width: 370px;
+  height: 294px;
+}
+
+/* Team */
+
+.team {
+  background: var(--third-bcg-color);
+}
+
+.team-item {
+  background: var(--primary-bcg-color);
+  width: 270px;
+  height: 368px;
+}
+
+.team-photo {
+  width: 270px;
+}
+
+.team-title,
+.team-name {
+  color: var(--secondary-color-text);
+}
+
+.team-name {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team-prof {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Footer */
+
+.footer {
+  background: var(--secondary-bcg-color);
+}
+
+.footer-connection {
+  color: var(--footer-color-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.footer-connection:hover,
+.footer-connection:focus {
+  color: var(--accent-color);
+}
+
+.address {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+/* portfolio.html */
+/* Filter */
+
+.filter-item {
+  background: var(--primary-button-color);
+  color: var(--secondary-color-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  background: var(--accent-color);
+  color: white;
+}
+
+/* Cards */
+
+.cards-title {
+  color: var(--secondary-color-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.cards-filter {
+  color: var(--primary-color-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.cards-img {
+  width: 370px;
+  height: 294px;
+}
