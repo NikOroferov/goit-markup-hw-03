@@ -367,7 +367,8 @@ img {
   margin-top: 20px;
 }
 
-.address-item {
+.address-list,
+.address-item:not(:first-child) {
   margin-top: 10px;
 }
 
