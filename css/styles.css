@@ -73,6 +73,7 @@ img {
 
 .logo {
   margin-right: 95px;
+  display: flex;
 
   font-family: Raleway, sans-serif;
   font-style: normal;
